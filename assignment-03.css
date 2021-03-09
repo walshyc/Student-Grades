@@ -1,0 +1,58 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+  width: 90%;
+}
+
+.name {
+  text-align: right;
+}
+/* https://www.w3schools.com/css/css_table.asp */
+table {
+  border: 1px black solid;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.8em;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+tr > th {
+  text-align: center;
+  font-weight: bold;
+  background-color: darkgray;
+}
+tr:nth-child(even) {
+  background-color: beige;
+}
+tr:nth-child(odd) {
+  background-color: ivory;
+}
+
+.score {
+  text-align: right;
+}
+.info {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+#not-submitted {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: lightgoldenrodyellow;
+  padding: 10px 20px;
+  border: 1px solid black;
+
+}
+
+#count {
+  color: black;
+  padding-left: 5px;
+}
