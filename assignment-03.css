@@ -1,22 +1,27 @@
 body {
   font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
 }
 
 .container {
-  width: 90%;
+  padding: 30px;
 }
 
 .name {
   text-align: right;
 }
+
 /* https://www.w3schools.com/css/css_table.asp */
 table {
   border: 1px black solid;
   border-collapse: collapse;
   width: 100%;
   font-size: 0.8em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/*  Table heading and cell styling */
 td,
 th {
   border: 1px solid #ddd;
@@ -27,6 +32,7 @@ tr > th {
   font-weight: bold;
   background-color: darkgray;
 }
+/* styling of every second row */
 tr:nth-child(even) {
   background-color: beige;
 }
@@ -34,25 +40,64 @@ tr:nth-child(odd) {
   background-color: ivory;
 }
 
-.score {
+.score,
+.average {
   text-align: right;
 }
-.info {
+
+/* layout for information  */
+.information {
   display: flex;
-  justify-content: end;
-  width: 100%;
-}
-
-#not-submitted {
-  margin: 10px 0;
-  padding: 10px;
+  flex-direction: column;
   background-color: lightgoldenrodyellow;
-  padding: 10px 20px;
+  margin-top: 5px;
   border: 1px solid black;
-
+  border-radius: 10px;
 }
+.row {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 5px;
+  align-items: center;
+}
+
+button {
+  background-color: darkgreen;
+  color: white;
+  border: 1px solid yellowgreen;
+  padding: 5px 10px;
+}
+
+button:hover {
+  background-color: mediumseagreen;
+}
+
 
 #count {
   color: black;
   padding-left: 5px;
+}
+
+.highlight {
+  background-color: chartreuse !important;
+  border: 2px solid chartreuse;
+}
+
+.newrow {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  height: 100px;
+}
+
+.addnewrow,
+.addnewcol,
+.reset {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+input {
+  width: 200px;
 }
